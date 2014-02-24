@@ -9,7 +9,7 @@ var getElementsByClassName = function (className) {
   var list = [];
   var findElement = function (element, className, list) {
   	if (element.classList !== undefined) {
-  		for (var k = 0; k < classes.length; k++) {
+  		for (var k = 0; k < element.classList.length; k++) {
   			if (element.classList[k] == className) {
   				list.push(element);
   			}
